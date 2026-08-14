@@ -1,0 +1,276 @@
+// Content model for the /digital-marketing page. Kept isolated from the
+// main site's src/data/content.js — nothing here is imported by Home.
+
+export const ecosystemTags = [
+  'Google Search',
+  'Google Ads',
+  'Meta Ads',
+  'Social Media',
+  'Website',
+  'Mobile App',
+  'SEO',
+  'Content',
+  'Analytics',
+  'Leads',
+  'Growth',
+]
+
+export const services = [
+  {
+    id: 'google-ads',
+    index: '01',
+    eyebrow: 'Paid Search',
+    title: 'Google Ads',
+    tagline: 'Precision-targeted campaigns',
+    description:
+      'We turn search intent into pipeline — built on rigorous keyword strategy, tight account structure and relentless optimization toward cost-per-lead, not vanity clicks.',
+    accent: '#8b5cf6',
+    visual: 'terminal',
+    pointsLayout: 'rows',
+    points: [
+      'Keyword Research',
+      'Campaign Strategy',
+      'Search Ads',
+      'Display Ads',
+      'Performance Max',
+      'Remarketing',
+      'Conversion Tracking',
+      'Landing Page Optimization',
+      'A/B Testing',
+      'Performance Reporting',
+    ],
+    cta: 'Audit my Google Ads account',
+  },
+  {
+    id: 'meta-ads',
+    index: '02',
+    eyebrow: 'Paid Social',
+    title: 'Meta Ads',
+    tagline: 'Scroll-stopping performance creative',
+    description:
+      'Facebook and Instagram campaigns engineered around the creative — audience research and pixel data feed a constant loop of new hooks, formats and angles.',
+    accent: '#ec4899',
+    visual: 'stories',
+    pointsLayout: 'chips',
+    points: [
+      'Audience Research',
+      'Campaign Strategy',
+      'Creative Development',
+      'Reels Ads',
+      'Lead Ads',
+      'Conversion Ads',
+      'Retargeting',
+      'Lookalike Audiences',
+      'Pixel / Conversion API',
+      'Performance Optimization',
+    ],
+    cta: 'Get a Meta Ads strategy',
+  },
+  {
+    id: 'social-media',
+    index: '03',
+    eyebrow: 'Organic Social',
+    title: 'Social Media Marketing',
+    tagline: 'Presence that compounds',
+    description:
+      'A content engine built around a real calendar, a real voice and real community management — so your brand shows up consistently, not sporadically.',
+    accent: '#22d3ee',
+    visual: 'calendar',
+    pointsLayout: 'ticker',
+    points: [
+      'Social Strategy',
+      'Content Calendar',
+      'Reels',
+      'Posts',
+      'Stories',
+      'Community Management',
+      'Engagement',
+      'Analytics',
+      'Growth Strategy',
+    ],
+    cta: 'Plan my content calendar',
+  },
+  {
+    id: 'content-marketing',
+    index: '04',
+    eyebrow: 'Content',
+    title: 'Content Marketing',
+    tagline: 'Words and visuals that convert',
+    description:
+      'Strategy-led content across every surface — blog, web, social and video — written and designed to move a reader from curious to convinced.',
+    accent: '#f59e0b',
+    visual: 'editorial',
+    pointsLayout: 'grid',
+    points: [
+      'Content Strategy',
+      'Blog Content',
+      'Website Copy',
+      'Social Content',
+      'Creative Content',
+      'Video Content',
+      'SEO Content',
+      'Content Distribution',
+    ],
+    cta: 'Start a content strategy',
+  },
+  {
+    id: 'seo',
+    index: '05',
+    eyebrow: 'Organic Search',
+    title: 'SEO',
+    tagline: 'Compounding, owned visibility',
+    description:
+      'Technical foundations, on-page precision and authority building — engineered for rankings that keep paying back long after the work is done.',
+    accent: '#34d399',
+    visual: 'ranking',
+    pointsLayout: 'rows',
+    points: [
+      'Keyword Research',
+      'Competitor Analysis',
+      'Technical SEO',
+      'On-page SEO',
+      'Off-page SEO',
+      'Local SEO',
+      'Schema Markup',
+      'Internal Linking',
+      'Content SEO',
+      'Google Business Profile',
+      'Search Console',
+      'Analytics',
+      'Monthly Reporting',
+    ],
+    cta: 'Get a free SEO audit',
+  },
+  {
+    id: 'website-development',
+    index: '06',
+    eyebrow: 'Engineering',
+    title: 'Website Development',
+    tagline: 'Fast, accessible, built to convert',
+    description:
+      'Modern, SEO-ready builds — from landing pages to full e-commerce — engineered with the same performance discipline as our flagship 3D work.',
+    accent: '#60a5fa',
+    visual: 'browser',
+    pointsLayout: 'chips',
+    points: [
+      'Business Websites',
+      'Landing Pages',
+      'E-commerce',
+      'React Websites',
+      'CMS',
+      'SEO-ready Architecture',
+      'Performance Optimization',
+      'Conversion Optimization',
+    ],
+    cta: 'Scope a website project',
+  },
+  {
+    id: 'app-development',
+    index: '07',
+    eyebrow: 'Product',
+    title: 'App Development',
+    tagline: 'Native-feeling, cross-platform',
+    description:
+      'iOS, Android and React Native builds with real UX rigor — from first wireframe through API integration, auth, push and a clean store deployment.',
+    accent: '#f472b6',
+    visual: 'device',
+    pointsLayout: 'grid',
+    points: [
+      'iOS',
+      'Android',
+      'React Native',
+      'UI/UX',
+      'API Integration',
+      'Authentication',
+      'Push Notifications',
+      'Analytics',
+      'App Store Deployment',
+    ],
+    cta: 'Discuss an app build',
+  },
+  {
+    id: 'branding-creative',
+    index: '08',
+    eyebrow: 'Identity',
+    title: 'Branding & Creative',
+    tagline: 'A distinct, premium identity',
+    description:
+      'Identity systems and creative direction that give every ad, post and page a consistent, unmistakable feel — the visual voice behind the performance.',
+    accent: '#c4b5fd',
+    visual: 'swatches',
+    pointsLayout: 'ticker',
+    points: [
+      'Brand Identity',
+      'Creative Design',
+      'Ad Creatives',
+      'Motion Graphics',
+      'Campaign Creatives',
+    ],
+    cta: 'Build my brand identity',
+  },
+]
+
+// top-of-funnel channels feeding the ecosystem diagram, converging on the
+// website -> leads -> sales -> growth pipeline.
+export const ecosystemSources = [
+  { id: 'seo', label: 'SEO', color: '#34d399' },
+  { id: 'social', label: 'Social Media', color: '#22d3ee' },
+  { id: 'content', label: 'Content', color: '#f59e0b' },
+  { id: 'google-ads', label: 'Google Ads', color: '#8b5cf6' },
+  { id: 'meta-ads', label: 'Meta Ads', color: '#ec4899' },
+]
+
+export const ecosystemPipeline = [
+  { id: 'website', label: 'Website', color: '#60a5fa' },
+  { id: 'leads', label: 'Leads', color: '#a78bfa' },
+  { id: 'sales', label: 'Sales', color: '#c4b5fd' },
+  { id: 'growth', label: 'Growth', color: '#f5f4f2' },
+]
+
+export const analyticsMetrics = [
+  { label: 'Reach', value: 482, suffix: 'K', color: '#8b5cf6' },
+  { label: 'Impressions', value: 1.2, suffix: 'M', decimals: 1, color: '#ec4899' },
+  { label: 'CTR', value: 4.8, suffix: '%', decimals: 1, color: '#22d3ee' },
+  { label: 'CPC', value: 0.34, prefix: '$', decimals: 2, color: '#f59e0b' },
+  { label: 'Conversion Rate', value: 6.2, suffix: '%', decimals: 1, color: '#34d399' },
+  { label: 'Leads', value: 1240, suffix: '+', color: '#60a5fa' },
+  { label: 'Cost Per Lead', value: 4.1, prefix: '$', decimals: 1, color: '#f472b6' },
+  { label: 'Organic Traffic', value: 68, suffix: '%', color: '#c4b5fd' },
+  { label: 'Keyword Rankings', value: 312, suffix: '+', color: '#a78bfa' },
+  { label: 'ROAS', value: 5.4, suffix: 'x', decimals: 1, color: '#f5f4f2' },
+]
+
+export const trendSeries = [22, 28, 25, 34, 31, 40, 38, 47, 44, 55, 52, 63]
+
+export const process = [
+  {
+    step: '01',
+    title: 'Discover',
+    description: 'We dig into your market, audience and current performance to find where the real growth is hiding.',
+  },
+  {
+    step: '02',
+    title: 'Strategize',
+    description: 'A channel plan built around your numbers — not a generic playbook — with clear goals and KPIs.',
+  },
+  {
+    step: '03',
+    title: 'Create',
+    description: 'Creative, content and campaigns produced to a premium standard, built to earn attention.',
+  },
+  {
+    step: '04',
+    title: 'Launch',
+    description: 'Campaigns go live with tracking, pixels and reporting wired up correctly from day one.',
+  },
+  {
+    step: '05',
+    title: 'Optimize',
+    description: 'Constant testing across creative, audience and landing experience — data drives every change.',
+  },
+  {
+    step: '06',
+    title: 'Scale',
+    description: 'Once a channel proves out, we scale spend and effort deliberately — protecting your margins.',
+  },
+]
