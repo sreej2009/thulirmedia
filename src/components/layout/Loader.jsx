@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from '../../lib/gsap'
 
-export default function Loader({ onComplete, label = 'Aether' }) {
+export default function Loader({ onComplete, label = 'Thulir Media' }) {
   const [progress, setProgress] = useState(0)
   const rootRef = useRef(null)
 

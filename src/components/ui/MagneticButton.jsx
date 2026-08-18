@@ -25,10 +25,14 @@ export default function MagneticButton({ children, className = '', as: Tag = 'bu
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
       data-cursor="hover"
-      className={className}
+      className={`group relative isolate overflow-hidden ${className}`}
       {...props}
     >
-      {children}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -translate-x-[120%] skew-x-[-18deg] bg-gradient-to-r from-transparent via-white/35 to-transparent mix-blend-difference transition-transform duration-700 ease-out group-hover:translate-x-[120%]"
+      />
+      <span className="relative">{children}</span>
     </Tag>
   )
 }
