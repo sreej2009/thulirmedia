@@ -12,13 +12,16 @@ export const seo = {
 }
 
 export const hero = {
-  eyebrow: 'Website Development · Thulir Media',
-  lines: ['Build Digital', 'Experiences That Convert.'],
-  sub: 'From wireframe to live product — fast, accessible websites engineered around your business goals, not just aesthetics.',
+  eyebrow: 'Web Development',
+  lines: ['We build websites', 'that work as hard as they look.'],
+  sub: 'Fast, scalable digital experiences engineered for performance, usability and growth.',
   primaryCta: { label: 'Start a Project', href: '#wd-cta' },
   secondaryCta: { label: 'See the Architecture', href: '#wd-whatwedo' },
-  tags: ['React', 'Landing Pages', 'E-commerce', 'CMS', 'APIs', 'Core Web Vitals', 'SEO-ready', 'Accessibility'],
 }
+
+// The six construction phases the Digital Architecture Core moves through
+// as the hero is scrolled — matches BrowserObject's own band logic.
+export const architecturePhases = ['Structure', 'Design', 'Development', 'Integration', 'Optimization', 'Launch']
 
 export const introduction = {
   eyebrow: 'The Problem',
@@ -101,21 +104,36 @@ export const useCases = {
   ],
 }
 
-export const metrics = {
+// Deliberately no numbers, percentages or timing claims here — every build
+// is different, and this page shouldn't imply a measured result before a
+// single line of a client's code exists. These are the standards every
+// build is held to, shown conceptually, not a fabricated scorecard.
+export const performance = {
   eyebrow: 'Performance',
-  title: 'What a well-built site looks like on paper.',
-  trend: [58, 62, 60, 68, 71, 74, 78, 82, 85, 88, 91, 96],
+  title: 'Built to perform.',
+  description: 'What every build is engineered around, before a single visitor arrives.',
   items: [
-    { label: 'PageSpeed Score', value: 96, suffix: '', color: '#34d399' },
-    { label: 'Load Time', value: 1.2, suffix: 's', decimals: 1, color: '#60a5fa' },
-    { label: 'Core Web Vitals', value: 100, suffix: '%', color: '#8b5cf6' },
-    { label: 'Bounce Rate', value: -34, suffix: '%', color: '#f59e0b' },
-    { label: 'Conversion Rate', value: 4.6, suffix: '%', decimals: 1, color: '#22d3ee' },
-    { label: 'Accessibility Score', value: 98, suffix: '', color: '#f472b6' },
-    { label: 'Time to Interactive', value: 1.8, suffix: 's', decimals: 1, color: '#a78bfa' },
-    { label: 'Organic Traffic', value: 52, suffix: '%', color: '#4ade80' },
-    { label: 'Uptime', value: 99.9, suffix: '%', decimals: 1, color: '#fb923c' },
-    { label: 'Mobile Score', value: 94, suffix: '', color: '#c4b5fd' },
+    { label: 'Fast', description: 'Lean assets and modern rendering, tuned for real-world networks.', fill: 0.94, color: '#60a5fa' },
+    { label: 'Responsive', description: 'Built for the screen it’s actually viewed on, not just desktop.', fill: 0.97, color: '#8b5cf6' },
+    { label: 'Accessible', description: 'Semantic markup and keyboard support, not an afterthought.', fill: 0.9, color: '#34d399' },
+    { label: 'SEO-Ready', description: 'Structured so search engines understand the site from day one.', fill: 0.92, color: '#f59e0b' },
+    { label: 'Scalable', description: 'Componentized code that grows with the business, not against it.', fill: 0.88, color: '#22d3ee' },
+  ],
+}
+
+// Six practices every build is held to — shown as a network around a
+// central "Engineering Core", not a fabricated audit or scorecard.
+export const engineeringStandard = {
+  eyebrow: 'One Engineering Standard',
+  title: 'Every build, held to the same bar.',
+  description: 'Six practices that shape every decision, from the first wireframe to the last deploy.',
+  nodes: [
+    { key: 'performance', label: 'Performance', color: '#60a5fa' },
+    { key: 'accessibility', label: 'Accessibility', color: '#34d399' },
+    { key: 'responsive', label: 'Responsive', color: '#8b5cf6' },
+    { key: 'seo', label: 'SEO', color: '#f59e0b' },
+    { key: 'security', label: 'Security', color: '#f472b6' },
+    { key: 'scalability', label: 'Scalability', color: '#22d3ee' },
   ],
 }
 

@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { gsap } from '../../lib/gsap'
 import { usePrefersReducedMotion } from '../../hooks/useIsMobile'
 import SectionHeading from '../../components/ui/SectionHeading'
-import CapabilityNetworkScene from '../canvas/CapabilityNetworkScene'
+import SceneErrorBoundary from '../../components/canvas/SceneErrorBoundary'
+import DisciplinesOrbitScene from '../canvas/DisciplinesOrbitScene'
 import { whatWeDo } from '../data'
 
 export default function WhatWeDo() {
@@ -35,12 +36,14 @@ export default function WhatWeDo() {
         className="relative mx-auto mt-14 h-[75vh] w-full max-w-6xl overflow-hidden rounded-2xl md:h-[85vh]"
         style={{ clipPath: 'inset(0 round 1rem)', contain: 'paint' }}
       >
-        <CapabilityNetworkScene reducedMotion={reducedMotion} onNavigate={navigate} />
+        <SceneErrorBoundary>
+          <DisciplinesOrbitScene reducedMotion={reducedMotion} onNavigate={navigate} />
+        </SceneErrorBoundary>
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-void via-transparent to-void/30" />
       </div>
 
       <p className="mt-8 text-center text-xs uppercase tracking-[0.2em] text-mist">
-        Hover a capability to see how it connects · Click to explore
+        Hover a discipline to see how it connects · Click to explore
       </p>
     </section>
   )

@@ -20,16 +20,28 @@ export const hero = {
   tags: ['Google Ads', 'Meta Ads', 'Social Media', 'Content', 'SEO', 'Website', 'Analytics', 'Audience', 'Leads', 'Sales'],
 }
 
-export const introduction = {
-  eyebrow: 'The Problem',
-  title: 'Most marketing spend is scattered across channels that never talk to each other.',
-  description:
-    'Ads run without content behind them. SEO runs without a conversion path. Social builds an audience nobody remarketes to. The result: wasted spend and growth that never compounds.',
-  problem:
-    'Every channel — search, social, content, paid — is usually run in isolation, by different people, with different goals and no shared source of truth on what is actually working.',
-  approach:
-    'We build a single growth engine instead: one strategy, one measurement framework, one system where every channel feeds the next — so attention compounds into pipeline, not noise.',
-  highlights: ['One strategy, every channel', 'Shared measurement framework', 'Built around your numbers'],
+// The studio's own introduction copy for this page — verbatim, real
+// business content (not generated), broken into natural sentence groups
+// for readability rather than one dense block. Do not alter the wording.
+export const digitalDirection = {
+  eyebrow: 'Digital Marketing',
+  lines: ['Creating the right', 'digital direction', 'for your brand.'],
+  highlight: 'digital direction',
+  paragraphs: [
+    'An effective digital presence is key for businesses aiming to create visibility, credibility, and sustainable growth through digital channels. As a digital marketing company in Coimbatore, we combine these elements to make sure businesses can create an effective digital presence.',
+    'Whether from search engines, websites, social media, or paid ads, all the online channels have their own significance in the discovery and perception of the brand.',
+    'With our rich experience in the creative and media industry, we are here to help you build an identity for yourself in the digital space.',
+  ],
+}
+
+export const digitalSystem = {
+  eyebrow: 'How It Works',
+  lines: ['Digital marketing', 'works as a system.'],
+  paragraphs: [
+    'In digital marketing, there are different channels that work collectively to increase visibility, create brand identity, and help with the growth of the business.',
+    'Given that there are various digital marketing companies in Coimbatore providing diverse services, the choice depends on the objectives, industry, target market, and existing online presence. At Thulir Media, we combine innovation and strategy in the services that constitute a solid digital base.',
+  ],
+  pillars: ['Visibility', 'Identity', 'Growth'],
 }
 
 export const whatWeDo = {

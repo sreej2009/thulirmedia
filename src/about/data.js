@@ -17,11 +17,32 @@ export const seo = {
 
 export const hero = {
   eyebrow: 'About Thulir Media',
-  lines: ['We Create', "What's Next."],
-  sub: 'Thulir Media brings creativity, technology and digital growth together to build experiences that move brands forward.',
-  primaryCta: { label: 'Start a Project', href: '#about-cta' },
+  lines: ['We build what', 'brands become.'],
+  sub: 'We bring strategy, creativity and technology together to build digital experiences that move brands forward.',
+  tag: 'One studio. Every discipline.',
+  primaryCta: { label: 'Start a Project', href: '/contact' },
   secondaryCta: { label: 'See Our Work', href: '/work' },
-  tags: ['Creative', 'Technology', 'Strategy', 'Content', 'Digital', 'Growth'],
+}
+
+// The five forces the Studio Core is built from — distinct from the six
+// service disciplines further down the page. These represent how the
+// studio works, not what it sells.
+export const studioForces = [
+  { key: 'strategy', label: 'Strategy', color: '#f59e0b' },
+  { key: 'creative', label: 'Creative', color: '#a78bfa' },
+  { key: 'technology', label: 'Technology', color: '#60a5fa' },
+  { key: 'content', label: 'Content', color: '#fb7185' },
+  { key: 'experience', label: 'Experience', color: '#e9d5ff' },
+]
+
+export const philosophy = {
+  eyebrow: 'Our Philosophy',
+  lines: [
+    { text: 'Creativity gets attention.', highlight: 'Creativity' },
+    { text: 'Strategy gives it direction.', highlight: 'Strategy' },
+  ],
+  description:
+    'Great work is not only about how it looks. It’s about why it exists, who it reaches, and what happens next.',
 }
 
 export const ecosystem = [
@@ -82,9 +103,9 @@ export const capabilities = servicesRegistry.map((s) => ({
 }))
 
 export const whatWeDo = {
-  eyebrow: 'What We Do',
+  eyebrow: 'What Connects Us',
   title: 'One studio. Every discipline.',
-  description: 'Six connected capabilities — explore one to see how it plugs into the rest.',
+  description: 'Six disciplines, cross-linked, not siloed — explore one to see how it plugs into the rest.',
 }
 
 export const howWeWork = {
@@ -144,9 +165,9 @@ export const culture = {
 }
 
 export const finalCta = {
-  eyebrow: 'Let’s Talk',
-  titleLines: ['Good Ideas Deserve', 'Great Execution.'],
-  sub: 'Let’s create something meaningful together.',
+  eyebrow: 'Let’s Build',
+  titleLines: ['Let’s build something', 'worth remembering.'],
+  sub: 'Have an idea, a challenge or a project in mind?',
   primaryLabel: 'Start a Project',
   subject: 'Starting a project with Thulir Media',
   secondaryLabel: 'See Our Work',

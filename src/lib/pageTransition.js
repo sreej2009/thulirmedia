@@ -38,6 +38,8 @@ export function coverTransition(color = '#0a0a0c') {
     })
     if (wordmarkEl) gsap.set(wordmarkEl, { opacity: 0, y: 10 })
 
+
+
     const tl = gsap.timeline({ onComplete: resolve })
     tl.to(overlayEl, {
       clipPath: 'circle(150% at var(--transition-ox, 50%) var(--transition-oy, 50%))',
@@ -48,8 +50,9 @@ export function coverTransition(color = '#0a0a0c') {
     if (wordmarkEl) {
       tl.to(wordmarkEl, { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' }, '-=0.3')
     }
-  })
+  }) 
 }
+
 
 export function revealTransition() {
   if (!overlayEl) return
@@ -65,3 +68,4 @@ export function revealTransition() {
     onComplete: () => gsap.set(overlayEl, { display: 'none', opacity: 1, backdropFilter: 'blur(0px)' }),
   })
 }
+

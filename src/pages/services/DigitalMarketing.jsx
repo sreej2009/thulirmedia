@@ -1,6 +1,5 @@
 import SEOHead from '../../components/layout/SEOHead'
 import ServicesNav from '../../services/shared/components/ServicesNav'
-import Introduction from '../../services/shared/components/Introduction'
 import ProcessRail from '../../services/shared/components/ProcessRail'
 import TechEcosystem from '../../services/shared/components/TechEcosystem'
 import UseCases from '../../services/shared/components/UseCases'
@@ -10,9 +9,10 @@ import FAQAccordion from '../../services/shared/components/FAQAccordion'
 import ClosingCTA from '../../services/shared/components/ClosingCTA'
 
 import Hero from '../../services/digital-marketing/sections/Hero'
+import DigitalDirectionJourney from '../../services/digital-marketing/sections/DigitalDirectionJourney'
 import WhatWeDo from '../../services/digital-marketing/sections/WhatWeDo'
 import InteractiveVisual from '../../services/digital-marketing/sections/InteractiveVisual'
-import { meta, seo, introduction, process, technology, useCases, metrics, whyUs, faq, cta } from '../../services/digital-marketing/data'
+import { meta, seo, process, technology, useCases, metrics, whyUs, faq, cta } from '../../services/digital-marketing/data'
 import { buildServiceSchema, buildBreadcrumbSchema } from '../../lib/seo'
 
 export default function DigitalMarketing() {
@@ -33,7 +33,7 @@ export default function DigitalMarketing() {
       <ServicesNav />
       <main className="relative bg-void">
         <Hero />
-        <Introduction id="dm-intro" {...introduction} accent={meta.accent} />
+        <DigitalDirectionJourney />
         <WhatWeDo />
         <InteractiveVisual />
         <ProcessRail id="dm-process" eyebrow="How We Work" title="A process built for momentum, not meetings." steps={process} accent={meta.accent} />
