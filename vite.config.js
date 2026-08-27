@@ -3,7 +3,10 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // Only the production build (served from github.io/thulirmedia/) needs a
+  // base path — leaving dev at '/' keeps `npm run dev` unchanged.
+  base: command === 'build' ? '/thulirmedia/' : '/',
   plugins: [react(), tailwindcss()],
   build: {
     // three/R3F/postprocessing are already isolated into their own cacheable
@@ -22,4 +25,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))
